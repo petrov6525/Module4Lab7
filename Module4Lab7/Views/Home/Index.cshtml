@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    a{
+        text-decoration:none;
+    }
+    .text-100{
+        font-size:100px;
+    }
+</style>
+
+
+@model User?
+
+<p>@ViewBag?.message</p>
+
+<a class="row text-center" asp-action="About">
+    <div class="col-md-6 offset-3 text-100">
+        ASP.NET MVC Conference
+    </div>
+</a>
+
+
+
+
